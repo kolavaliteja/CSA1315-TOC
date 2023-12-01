@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+#define max 100
+int main() {
+    char str[max];
+    int len;
+    printf("Enter the string to be checked: ");
+    scanf("%s", str);
+    len = strlen(str);
+    if (len >= 2 && str[0] == '0' && str[len - 1] == '1') {
+        printf("String is accepted\n");
+    } else {
+        printf("String is not accepted\n");
+    }
+    return 0;
+}
